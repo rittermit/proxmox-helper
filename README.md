@@ -11,7 +11,7 @@
 
    format : 'qm importovf <vmid> <manifest> <storage>'
    
-  `$ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm`
+  `$ qm importovf 100 /some/directory/VM/VM.ovf local-lvm`
 
 7) KVM-Umkonfigurieren :
 ```   
