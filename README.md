@@ -11,7 +11,7 @@
   $ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm
 
 5) KVM-Umkonfigurieren :
-   
+```   
   #!/bin/bash
   if [ "x$1" == "x" ]; then
           echo "Missing VM-Nr"
@@ -36,11 +36,12 @@
   
   # add small scsi-disk so that drivers are installed successfully ( Storage - Pfad anpassen ) 
   qm set $1 --virtio15 local:1,size=1G
-
+```
 
 6) Windows booten, virtio-treiber installieren und Proxmox-VM herunterfahren.
 
-7) cleanup/frinal VM-Config . 
+7) cleanup/frinal VM-Config .
+```
   #!/bin/bash
   if [ "x$1" == "x" ]; then
           echo "Missing VMnr"
@@ -62,4 +63,4 @@
   qm set $1 --scsihw virtio-scsi-pci
   # enable qemu-agent
   qm set $1 --agent 1
-  
+```
