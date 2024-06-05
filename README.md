@@ -3,14 +3,15 @@
 1) Vorab : vmware-tools deinstallieren
 2) Danach VMware-VM shutdown.
 
-3) via OVFtool nach Proxmox kopieren( muss ggf. nach installiert werden ) 
-  $ ovftool vi://VMUSER:VMPASS@esxihost/VM /some/directory/VM
+3) via OVFtool nach Proxmox kopieren( muss ggf. nach installiert werden )
+   
+  `$ ovftool vi://VMUSER:VMPASS@esxihost/VM /some/directory/VM`
 
-4) import OVF: 
+5) import OVF: 
   format : 'qm importovf <vmid> <manifest> <storage>'
   $ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm
 
-5) KVM-Umkonfigurieren :
+6) KVM-Umkonfigurieren :
 ```   
   #!/bin/bash
   if [ "x$1" == "x" ]; then
