@@ -1,3 +1,6 @@
+# Aktuelle Info von Proxmox
+https://www.proxmox.com/en/services/videos/proxmox-virtual-environment/proxmox-ve-import-wizard-for-vmware
+
 # Import ESXI-VMs via CLI
 
 1) Vorab : vmware-tools deinstallieren
