@@ -10,6 +10,7 @@
 5) import OVF: 
 
    format : 'qm importovf <vmid> <manifest> <storage>'
+   
   `$ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm`
 
 7) KVM-Umkonfigurieren :
