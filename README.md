@@ -8,10 +8,11 @@
   `$ ovftool vi://VMUSER:VMPASS@esxihost/VM /some/directory/VM`
 
 5) import OVF: 
-  format : 'qm importovf <vmid> <manifest> <storage>'
-  $ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm
 
-6) KVM-Umkonfigurieren :
+   format : 'qm importovf <vmid> <manifest> <storage>'
+  `$ qm importovf 100 /XXX/testvm/testvm.ovf local-lvm`
+
+7) KVM-Umkonfigurieren :
 ```   
   #!/bin/bash
   if [ "x$1" == "x" ]; then
